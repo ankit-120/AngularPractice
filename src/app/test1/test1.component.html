@@ -1,0 +1,4 @@
+<input type="text" class="form-control" [(ngModel)]="username" #box (input)="onclick(box.value)">
+<p> {{username}} </p>
+
+<button class="btn btn-primary" [disabled]="!enableBtn" (click)="reset()">Reset</button>

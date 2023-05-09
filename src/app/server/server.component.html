@@ -1,0 +1,16 @@
+<button class="btn btn-primary" [disabled]="!enableButton" (click)="updateClickStatus()"> Add new server </button>
+<!-- <p>{{!enableButton}}</p> -->
+<p [innerText]="!enableButton"></p>
+
+<p> {{clickStatus}} </p>
+
+<!-- <input type="text" class="form-control" (input)="onUpdateInput($event)"> -->
+
+<!-- <input type="text" class="form-control" #event (input)="onUpdateInput(event.value)"> -->
+
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<p> {{serverName}} </p>
+
+
+<h4>This is a server component</h4>

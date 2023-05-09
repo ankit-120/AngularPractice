@@ -1,0 +1,9 @@
+<button class="btn btn-primary" (click)="onClick()">Display Details</button>
+
+<p *ngIf="toggleDisplay">this is a paragraph</p>
+
+<p *ngFor="let item of arr"  
+    [ngStyle]="{backgroundColor:color(item)}"
+    [ngClass]="{white:item>5}">
+    {{item}}
+</p>
