@@ -1,0 +1,7 @@
+<app-child (btnClicked)="setName($event)"></app-child>
+<p> Parent {{childName}} </p>
+
+
+<button class="btn btn-primary" (click)="onChange()">Change value</button>
+
+<app-child [title]="title"></app-child>

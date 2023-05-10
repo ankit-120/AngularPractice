@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-12">
+        <input type="text" class="form-control" placeholder="Enter name" #name>
+        <button class="btn btn-primary" (click)="onClick(name.value)">OK</button>
+        <p> child {{inputName}} </p>
+    </div>
+</div>
+
+<div class="row">
+    <!-- <div class="col-md-4 offset-md-4 border p-2"> {{todo.title}} -- {{todo.content}} </div> -->
+    <div class="col-md-4 offset-md-4 border p-2"> {{title}} </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-success">New Recepie</button>
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <a href="#" class="list-group-item d-flex justify-content-between border p-2" *ngFor="let item of recepies">
+            <div>
+                <h4 class=""> {{item.name}} </h4>
+                <p> {{item.description}} </p>
+            </div>
+            <div>
+                <img src=" {{item.imagePath}} " alt="Recepie Heading" class="img-responsive" style="max-height: 75px;">
+            </div>
+        </a>
+        <app-recepie-item></app-recepie-item>
+    </div>
+</div>
